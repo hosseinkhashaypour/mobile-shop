@@ -1,0 +1,153 @@
+:root {
+    --media : @media (min-width:300px) {}
+}
+
+@font-face {
+    font-family: lale;
+    src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+    font-family: aviny;
+    src: url(aviny.ttf);
+}
+
+@media (min-width:300px) {
+    body {
+        background-color: gray !important;
+    }
+}
+
+@media (min-width:300px) {
+    .container-fluid {
+        font-family: irs;
+    }
+}
+
+@media (min-width:300px) {
+    div.card {
+        margin-left: 46px;
+    }
+}
+
+@media (min-width:300px) {
+    div.card img {
+        width: 100px;
+        width: 115px;
+        margin-left: 84px;
+        transition: width 2s;
+    }
+}
+
+@media (min-width:300px) {
+    div.card img:hover {
+        width: 200px;
+        margin-left: 41px;
+
+    }
+}
+
+@media (min-width:300px) {
+    div.card p {
+        font-size: 11px;
+        transition: font-size 2s, font-family 2s, font-style 2s;
+    }
+}
+
+@media (min-width:300px) {
+    div.card p:hover {
+        text-align: justify;
+        font-family: irs;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+}
+
+/* another devices design */
+@media (max-width:400px) {
+    .card-like {
+        display: none;
+    }
+}
+
+@media (min-width:500px) {
+    div.card-like {
+        max-width: 300px;
+        /* margin-top: -600px; */
+        margin: 20px auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background-color: white;
+        margin-top: -600px;
+        margin-top: -972px;
+        display: block;
+        height: 475px;
+    }
+}
+
+.card-like .card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-like .card-body {
+    padding: 20px;
+}
+
+.card-like .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-like .card-text {
+    font-size: 14px;
+}
+
+.card-like img {
+    width: 115px;
+    margin-left: 85px;
+    transition: all 2s;
+}
+
+@media (min-width:500px) {
+    div.card-body p {
+        font-size: smaller;
+        text-align: justify;
+    }
+}
+
+@media (min-width:500px) {
+    div.card-like p:hover {
+        font-size: 15px;
+        font-family: irs;
+    }
+}
+
+/* @media (min-width:500px){
+    div.card-like:hover{
+        max-width: 371px;
+       
+    } */
+
+@media (min-width:500px) {
+    div.card-like img:hover {
+        width: 200px;
+        margin-left: 58px;
+    }
+}
+
+@media (min-width:500px) {
+    div.card-like button {
+        margin-top: -10px;
+    }
+}
+@media (min-width:500px){
+    .card{
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon"
+    href="https://oaidalleapiprodscus.blob.core.windows.net/private/org-cHqYMtEGONRLsoBHZdHKnfsC/user-o0jg441J21bsB7L6NTYrZcOy/img-TlIjx12g0kGFA6Ip8xnjYdl3.png?st=2023-12-14T17%3A39%3A16Z&se=2023-12-14T19%3A39%3A16Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-12-14T18%3A32%3A47Z&ske=2023-12-15T18%3A32%3A47Z&sks=b&skv=2021-08-06&sig=1hEZQoCRjtIQ4yBmFFX/5bgjfsBnQf7H02SeFD1E338%3D"
+    type="image/x-icon">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EZSHOP</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">تنظیمات</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">خانه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="azlogin.html">خروج از حساب کاربری</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              شارژ حساب
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="card" style="width: 18rem;">
+    <img
+      src="data:image/jpeg;base64,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"
+      class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">iphone 15</h5>
+      <p class="card-text">آیفون 15 بدع یکی از جدیدترین محصولات شرکت اپل در دسته‌ی گوشی‌های هوشمند است. این گوشی دارای
+        صفحه نمایش بزرگ و باکیفیتی است که تجربه‌ی بصری را بهبود می‌بخشد. همچنین، آیفون 15 بدع با نسخه‌ی نرم‌افزاری iOS
+        بروزرسانی شده است و از قابلیت‌های جدیدی همچون شارژ سریع و دوربینهای پیشرفته بهره می‌برد. این گوشی با ظاهری شیک و
+        زیبا طراحی شده است و قابلیت‌های امنیتی مانند ضدآب بودن و شناسایی چهره را نیز داراست.</p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        بررسی و خرید محصول
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">انتخاب کنید</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+              <a href="buy.html"><button type="button" class="btn btn-primary">بررسی و خرید</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="width: 18rem;">
+    <img
+      src="data:image/jpeg;base64,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"
+      class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">iphone14</h5>
+      <p class="card-text">آیفون 14 یکی از جدیدترین محصولات اپل در لاین آیفون است که در سال 2021 عرضه شده است. این
+        دستگاه دارای پردازنده قوی A15 Bionic است که عملکرد سریع و قدرتمندی را فراهم می‌کند. همچنین، دوربین آیفون 14
+        بهبود یافته و از قابلیت های عکاسی و فیلمبرداری حرفه‌ای برخوردار است. طراحی زیبا و صفحه نمایش بی‌حاشیه OLED با
+        نمره‌گذاری HDR10 نیز از ویژگی‌های دیگر این گوشی است.</p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        بررسی و خرید محصول
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">انتخاب کنید</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- <div class="card-like">
+    <img class="card-img-top"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMufuAqbs7veynXniCcCIlimmQwMyBJB40dpgmyOk2kVGINYMohtrTBJHLi3zQpJO13yw&usqp=CAU"
+      alt="Card Image">
+    <div class="card-body">
+      <h5 class="card-title">iphone 13</h5>
+      <p class="card-text">آیفون 13، نسل جدیدی از تلفن همراه‌های هوشمند تولید شده توسط شرکت اپل است. این دستگاه برخی از
+        به‌روزرسانی‌های کلیدی را نسبت به نسل قبلی (آیفون 12) دارد. برخی از این به‌روزرسانی‌ها شامل پردازنده قدرتمند تر
+        A15 Bionic، دوربین با کیفیت بهبود یافته، نمایشگر ProMotion با نرخ تازه‌سازی 120Hz و مقاومت در برابر آب و گرد و
+        غبار بیشتر است. علاوه بر این، آیفون 13 با طراحی شیشه‌ای بی‌درز و دوربین جدید به شکل دایره که در مرکز قاب قرار
+        دارد، ظاهری جدید و متفاوت نسبت به نسل‌های قبلی ایجاد کرده است. </p>
+      Button trigger modal -->
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button> --> 
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;margin-left: 470px;margin-top: -978px; height: 200%;">
+      <img src="https://ss7.vzw.com/is/image/VerizonWireless/apple-iphone-13-starlight-09142021/?wid=465&hei=465&fmt=webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">iphone 13</h5>
+        <p class="card-text">آیفون 13 در سپتامبر 2021 عرضه شد و با طراحی بارز و صفحه نمایش نفوذپذیر است. این گوشی از چیپست قدرتمند A15 Bionic استفاده می‌کند و قابلیت‌های عکاسی و فیلمبرداری حرفه‌ای را فراهم می‌کند. همچنین با کیفیت و وضوح بالای صفحه نمایش Super Retina XDR، تجربه‌ی بصری عالی در اختیار کاربران قرار می‌دهد.
+          وشی با ظاهری شیک و زیبا طراحی شده است و قابلیت‌های امنیتی مانند ضدآب بودن و شناسایی چهره را نیز داراست.وشی با ظاهری شیک و زیبا طراحی شده است و قابلیت‌های امنیتی مانند ضدآب بودن 
+        </p>
+        <a href="buy.html" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    </body>
+
+</html>
